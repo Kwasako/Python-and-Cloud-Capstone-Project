@@ -12,7 +12,7 @@ import pandas as pd
 def extract_job_data():
     url = "https://jsearch.p.rapidapi.com/search"
 
-    querystring = {"query":"Data Engineer or Data Analyst job in USA or Canada","page":"1","num_pages":"1","date_posted":"today","job_titles":"data engineer,data analyst"}
+    querystring = {"query":"Data Engineer or Data Analyst job in Canada","page":"1","num_pages":"1","date_posted":"today","job_titles":"data engineer,data analyst"}
 
     headers = {
         "X-RapidAPI-Key": "38ff82da04mshabfe208703e2ebdp1220e0jsnb2a20a82a858",

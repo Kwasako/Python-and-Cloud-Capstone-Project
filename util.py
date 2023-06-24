@@ -1,6 +1,6 @@
 import psycopg2
 
-redshift_endpoint = 'default.265037400333.eu-north-1.redshift-serverless.amazonaws.com:5439/dev'
+redshift_endpoint = 'kwasako-endpoint-7xofvfnpr8ozsghmvehc.265037400333.eu-north-1.redshift-serverless.amazonaws.com'
 redshift_port = 5439
 redshift_db = 'dev'
 redshift_user = 'admin'
