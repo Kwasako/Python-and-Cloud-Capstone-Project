@@ -15,7 +15,7 @@ def extract_job_data():
     querystring = {"query":"Data Engineer or Data Analyst job in Canada","page":"1","num_pages":"1","date_posted":"today","job_titles":"data engineer,data analyst"}
 
     headers = {
-        "X-RapidAPI-Key": "38ff82da04mshabfe208703e2ebdp1220e0jsnb2a20a82a858",
+        "X-RapidAPI-Key": "*****************",
         "X-RapidAPI-Host": "jsearch.p.rapidapi.com"
     }
     response = requests.get(url, headers=headers, params=querystring)
