@@ -17,7 +17,7 @@ def extract_job_data():
     querystring = {"query":"Data Engineer or Data Analyst job in Canada","page":"1","num_pages":"1","date_posted":"today","job_titles":"data engineer,data analyst"}
 
     headers = {
-        "X-RapidAPI-Key": "38ff82da04mshabfe208703e2ebdp1220e0jsnb2a20a82a858",
+        "X-RapidAPI-Key": "**************************************",
         "X-RapidAPI-Host": "jsearch.p.rapidapi.com"
     }
     response = requests.get(url, headers=headers, params=querystring)
@@ -67,8 +67,7 @@ def load_to_data_warehouse():
     redshift_table = 'job_data'
 
     # Initialize AWS clients
-    #s3_hook = S3Hook(aws_conn_id='aws_s3')
-    s3_client = boto3.client('s3')
+    s3_hook = S3Hook(aws_conn_id='aws_s3')
 
     # Download the CSV file from S3
     local_file_path = Variable.get('local_file_path')  # Path to store the file locally
