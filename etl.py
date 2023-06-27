@@ -1,10 +1,7 @@
 from airflow import DAG
-from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 from airflow.operators.python import PythonOperator
 from datetime import datetime
-from airflow.models import Variable 
-import requests
-import pandas as pd
+
 
 with DAG('extract_dag', start_date=datetime(2023, 6, 17), schedule_interval='@daily') as dag:
     task1 = PythonOperator(
